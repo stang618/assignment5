@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Javascript Page</title>
+</head>
+
+<body>
+
+	<script>
+
+		//this is an alert to my page
+		alert("Welcome to my page!");
+
+		//this is an example using variables
+		var x = 50;
+		var y = 50;
+		var z = x + y;
+		//this is sending the output to the console
+		console.log(z);
+
+		//this is a similar example:
+		var dogs = "dogs";
+		var are = "are";
+		var cute = "cute"
+		var sentence = dogs + are + cute;
+		console.log(sentence);
+
+		//this is an array
+		var colors = ["red", "blue"];
+		var numbers = ["one", "two"];
+		var things = [colors, numbers];
+		//this will make the console to display "one"
+		console.log(things[1][0]);
+		//this will make the console display "red"
+		console.log(things[0][0]);
+
+		//using an if statement
+		if(3>1){
+			console.log("This will show up in the console");
+		}
+
+		//using an else statement
+		if(3<1){
+			console.log("this won't show up in the console and");
+		} else{
+			console.log("this will show up instead")
+		}
+
+		//using an else if statement
+		if(6>8){
+			console.log("this won't show up because 6<8")
+		}else if(5>8){
+			console.log("this won't show because 5<8")
+		}else{
+			console.log("this will show because both were false");
+		}
+
+		//an example of a function
+		function addition(firstnumber, secondnumber){
+			return firstnumber + 3 + secondnumber;
+		}//the following will display 10 in the console (6+3+1=10)
+		console.log(addition(6, 1));
+
+		//another example of a function:
+		function saymyname(name){
+			//this will result in a dialog box with my name when it is invoked
+			return alert(name);
+		}
+		//invoking this function saymyname
+		saymyname("Stephanie");
+		saymyname("Tang");
+
+		//combining a function and an else if statement:
+		function WhatWillIEatforDinner(food) {
+			if (food === 1) {
+				return alert("you will eat spaghetti");
+			} else if (food === 2) {
+				return alert("YOU WILL EAT FRIED CHICKEN");
+			} else {
+				return alert("you will eat sushi")
+			}
+		}
+		//invoking the whatwillieatfordinner function:
+		//because I love fried chicken
+		WhatWillIEatforDinner(2);
+
+		//PART TWO OF THE ASSIGNMENT
+		//FUNCTIONS
+
+		//Function #1
+		function multiplication(number1, number2) {
+			return number1 * 2 * number2;
+		}
+		console.log(multiplication(5,3)); 
+
+		//Function #2
+		function whatwillieatfordessert(dessert){
+			if (dessert === 1) {
+				return alert("YOU WILL HAVE ICE CREAM TOO");
+			} else {
+				return alert("you will have pie");
+			}
+		}
+		whatwillieatfordessert(1);
+
+		//Function #3
+		function phrase(part1, part2) {
+			return part2 + part1;
+		}
+		console.log(phrase("confusing","Javascript is"));
+
+	</script>
+
+<h1>My First Page Using Javascript</h1>
+
+</body>
+
+</html>
